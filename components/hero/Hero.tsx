@@ -16,27 +16,28 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="bg-curvy-light-mode bg-contain bg-bottom bg-no-repeat dark:bg-curvy-dark-mode"
+      className="bg-white bg-bottom bg-no-repeat bg-contain shadow-lg bg-curvy-light-mode dark:bg-darkBlue dark:bg-curvy-dark-mode"
     >
       {/* <!-- Hero Container --> */}
-      <div className="container mx-auto px-6 pb-52 text-center md:pt-20">
+      <div className="container px-6 mx-auto text-center pb-52 md:pt-20">
         <Image
           height={0}
           width={0}
           src="/images/illustration-intro.png"
           alt=""
-          className="mx-auto"
+          sizes="100vh"
+          className="w-auto mx-auto"
         />
-        <h1 className="mx-auto mb-10 mt-14 max-w-2xl text-3xl font-bold leading-normal md:text-4xl">
+        <h1 className="max-w-2xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">
           All your files in one secure location, assessible anywhere.
         </h1>
-        <p className="mx-auto mb-10 max-w-sm text-sm md:max-w-xl md:text-lg">
+        <p className="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
         <button
-          className="w-52 rounded-full bg-accentCyan p-3 hover:scale-95"
+          className="p-3 rounded-full w-52 bg-accentCyan hover:scale-95"
           onClick={() => notify('Get Started')}
         >
           Get Started

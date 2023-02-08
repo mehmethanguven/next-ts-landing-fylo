@@ -8,7 +8,7 @@ import { Testimonials } from '@/components/testimonials'
 
 export default function Home() {
   return (
-    <div className="font-opensans pt-10 dark:bg-darkBlue dark:text-white">
+    <div className="pt-10 bg-white font-opensans dark:bg-darkBlue dark:text-white">
       {/* <!-- Header --> */}
 
       <Header />

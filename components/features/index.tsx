@@ -25,9 +25,9 @@ const features: IFeatureItem[] = [
 ]
 export const Features = () => {
   return (
-    <section id="features" className="bg-gray-50 pt-12 dark:bg-darkBlue1">
+    <section id="features" className="pt-12 bg-gray-50 dark:bg-darkBlue1">
       {/* <!-- Features Container --> */}
-      <div className="container mx-auto px-6 pb-32">
+      <div className="container px-6 pb-32 mx-auto">
         <div className="grid grid-cols-1 gap-24 text-center md:grid-cols-2 md:gap-0">
           {(features || []).map((item, id) => (
             <FeatureItem key={id} {...item} />

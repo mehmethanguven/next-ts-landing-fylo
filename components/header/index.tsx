@@ -9,11 +9,11 @@ const navLinks: INavLink[] = [
 
 export const Header = () => {
   return (
-    <header className="container mx-auto h-40 px-6 text-center md:h-20">
+    <header className="container h-40 px-6 mx-auto text-center bg-white dark:bg-darkBlue md:h-20">
       {/* <!-- Dynamic Logo --> */}
-      <div className="top-10 left-10 mx-auto h-20 w-48 bg-logo-light-mode bg-no-repeat dark:bg-logo-dark-mode md:absolute md:mx-0"></div>
+      <div className="w-48 h-20 mx-auto bg-no-repeat top-10 left-10 bg-logo-light-mode dark:bg-logo-dark-mode md:absolute md:mx-0"></div>
       {/* <!-- Menu --> */}
-      <div className="top-12 right-10 flex items-center justify-center space-x-4 md:absolute md:space-x-10">
+      <div className="flex items-center justify-center space-x-4 top-12 right-10 md:absolute md:space-x-10">
         {(navLinks || []).map((item, id) => (
           <NavItem key={id} {...item} />
         ))}

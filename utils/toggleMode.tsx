@@ -20,7 +20,7 @@ export const ModeToggle = () => {
     if (currentTheme === 'dark') {
       return (
         <SunIcon
-          className="h-5 w-5 "
+          className="w-5 h-5"
           role="button"
           onClick={() => setTheme('light')}
         />
@@ -28,7 +28,7 @@ export const ModeToggle = () => {
     } else {
       return (
         <MoonIcon
-          className="h-5 w-5 text-slate-700 "
+          className="w-5 h-5 text-slate-700"
           role="button"
           onClick={() => {
             setTheme('dark')
@@ -42,7 +42,7 @@ export const ModeToggle = () => {
   return (
     <div
       aria-label="Toggle dark mode"
-      className="group rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 backdrop-blur transition hover:bg-gray-400 dark:bg-slate-800 dark:ring-1 dark:ring-white"
+      className="px-3 py-2 transition rounded-full shadow-lg group bg-white/90 shadow-zinc-800/5 backdrop-blur hover:scale-110 hover:bg-gray-400 dark:bg-slate-800 dark:ring-1 dark:ring-white"
     >
       {renderThemeChanger()}
     </div>
